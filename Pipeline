@@ -24,7 +24,7 @@ pipeline{
         }
         stage("Feature Engineering"){
             steps{
-                sh 'python3 prophet_model.py'
+                sh 'python3 feature_engineering.py'
             }
         }
     }
