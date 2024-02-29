@@ -15,7 +15,7 @@ def visualize_data():
     fig_1.update_layout(showlegend=False)
     fig_1.update_xaxes(showgrid=False)
     fig_1.update_yaxes(showgrid=False)
-    #fig_1.show()
+    fig_1.show()
 
     # Candlestick Chart
     fig_2 = go.Figure(data=[go.Candlestick(x=data['date'],
@@ -28,7 +28,7 @@ def visualize_data():
                         yaxis_title='Stock Price (USD)')
     fig_2.update_xaxes(showgrid=False)
     fig_2.update_yaxes(showgrid=False)
-    #fig_2.show()
+    fig_2.show()
 
     return data
 
