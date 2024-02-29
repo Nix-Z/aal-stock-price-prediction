@@ -12,7 +12,7 @@ def visualize_data():
                         'close': 'Closing Price (USD)'
                     },
                     title="Daily Closing Price of American Airlines Group Stock")
-    fig_1.update_layout(showlegend=False)
+    fig_1.update_layout(showlegend=False, template='plotly_dark')
     fig_1.update_xaxes(showgrid=False)
     fig_1.update_yaxes(showgrid=False)
     fig_1.show()
@@ -26,7 +26,8 @@ def visualize_data():
                                            close=data['close'])])
     fig_2.update_layout(title='American Airlines Group Stock Price Candlestick Chart',
                         xaxis_title='Date',
-                        yaxis_title='Stock Price (USD)')
+                        yaxis_title='Stock Price (USD)',
+                        template='plotly_dark')
     fig_2.update_xaxes(showgrid=False)
     fig_2.update_yaxes(showgrid=False)
     fig_2.show()
