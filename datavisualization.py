@@ -16,6 +16,7 @@ def visualize_data():
     fig_1.update_xaxes(showgrid=False)
     fig_1.update_yaxes(showgrid=False)
     fig_1.show()
+    fig_1.save('fig_1.jpg')
 
     # Candlestick Chart
     fig_2 = go.Figure(data=[go.Candlestick(x=data['date'],
@@ -29,6 +30,7 @@ def visualize_data():
     fig_2.update_xaxes(showgrid=False)
     fig_2.update_yaxes(showgrid=False)
     fig_2.show()
+    fig_2.save('fig_2.jpg')
 
     return data
 
